@@ -161,3 +161,43 @@ This data is loaded at startup and used to populate the game world.
 - Attach debugger to ServUO.exe process
 - Console commands available via `Scripts/Misc/ConsoleCommands.cs`
 - In-game commands for GMs defined in `Scripts/Commands/`
+
+---
+
+## Development Journey - Project Context
+
+### Current Achievement (2025-12-11)
+- ServUO server running successfully on Kali Linux (WSL2)
+- ClassicUO client (Windows) connecting to ServUO server (WSL) - cross-platform setup working!
+
+### Development Environment
+- **Server**: ServUO on Kali Linux (WSL2) at /home/alvim/repos/ServUO
+- **Client**: ClassicUO running on Windows host
+- **Platform**: Linux-Windows hybrid setup (WSL2 networking bridge working)
+- **Repository**: Git branch 'first-run', clean status
+
+### Project Goals
+- Long-term hobby project to learn ServUO (server) and ClassicUO (client) development
+- Create custom variations and modifications of both
+- Learning approach: Interactive, ludic (playful), intuitive, day-by-day
+- This is the beginning - documenting from day one
+
+### Tech Stack Understanding
+- ServUO: C# (.NET Framework 4.8), Ultima Online Server Emulator
+- Core projects: Ultima library, Server engine, Scripts (game content)
+- Build: `make debug` or `make release` on Linux
+- Architecture: Entity-based (Items/Mobiles), event-driven, serialization-based persistence
+
+### Learning Philosophy
+- Take time, enjoy the process
+- Build knowledge incrementally
+- Experiment and play with the codebase
+- Document discoveries along the way
+- Claude Code as development companion throughout the journey
+
+### Next Steps (When Ready)
+- Explore the codebase gradually
+- Understand core systems (World, Items, Mobiles, Network)
+- Try small modifications
+- Learn the Scripts architecture
+- Eventually tackle ClassicUO client development
